@@ -7,9 +7,17 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { BreedStore } from './services/breed.store';
+import { BreedSidebarComponent } from './components/breed-sidebar/breed-sidebar.component';
+import { BreedInformationComponent } from './components/breed-information/breed-information.component';
+import { BreedSidebarItemComponent } from './components/breed-sidebar-item/breed-sidebar-item.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    BreedSidebarComponent,
+    BreedInformationComponent,
+    BreedSidebarItemComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,

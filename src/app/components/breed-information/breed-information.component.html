@@ -1,0 +1,24 @@
+<figure class="bg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+  <img
+    class="w-64 h-64 rounded-md mx-auto object-cover"
+    [src]="selectedBreed?.image?.url"
+    alt=""
+    width="384"
+    height="512"
+  />
+  <div class="pt-6 space-y-4">
+    <figcaption class="font-medium text-center">
+      <div class="text-sky-500 dark:text-sky-400">
+        {{ selectedBreed?.name }}
+      </div>
+      <div class="text-slate-700 dark:text-slate">
+        {{ selectedBreed?.origin }}
+      </div>
+    </figcaption>
+    <blockquote>
+      <p class="text-sm">
+        {{ selectedBreed?.description }}
+      </p>
+    </blockquote>
+  </div>
+</figure>

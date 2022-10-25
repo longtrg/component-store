@@ -1,0 +1,9 @@
+<div
+  class="breed-item py-2 px-4 cursor-pointer"
+  [ngClass]="{
+    'bg-slate-100': breedItem.id === (selectedId$ | async)
+  }"
+  (click)="selectBreed(breedItem.id)"
+>
+  {{ breedItem.name }}
+</div>
